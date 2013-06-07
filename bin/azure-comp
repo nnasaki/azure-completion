@@ -1,0 +1,202 @@
+#!/usr/bin/env node
+
+var complete = require('complete');
+
+complete({
+  program: 'azure',
+  commands: {
+    portal: {},
+    help: {},
+    account: {
+      download: {},
+      list: {},
+      set: {},
+      'import': {},
+      clear: {},
+      'affinity-group': {
+        list: {},
+        create: {},
+        show: {},
+        'delete': {}
+      },
+      storage: {
+        list: {},
+        show: {},
+        create: {},
+        update: {},
+        'delete': {},
+        keys: {
+          list: {},
+          renew: {}
+        }
+      }
+    },
+    config: {
+      list: {},
+      'delete': {},
+      set: {}
+    },
+    site: {
+      browse: {},
+      config: {
+        add: {},
+        clear: {},
+        get: {},
+        list: {}
+      },
+      create: {},
+      'delete': {},
+      deployment: {
+        github: {},
+        list: {},
+        redeploy: {},
+        show: {}
+      },
+      deploymentscript: {},
+      list: {},
+      location: {
+        list: {}
+      },
+      log: {
+        download: {},
+        tail: {}
+      },
+      repository: {
+        branch: {},
+        'delete': {}
+      },
+      restart: {},
+      scale: {
+        instances: {},
+        mode: {}
+      },
+      show: {},
+      start: {},
+      stop: {}
+    },
+    mobile: {
+      locations: {},
+      create: {},
+      'delete': {},
+      list: {},
+      show: {},
+      restart: {},
+      log: {},
+      key: {
+        regenerate: {}
+      },
+      config: {
+        list: {},
+        set: {},
+        get: {}
+      },
+      table: {
+        list: {},
+        show: {},
+        create: {},
+        update: {},
+        'delete': {}
+      },
+      data: {
+        read: {},
+        truncate: {}
+      },
+      script: {
+        'delete': {},
+        download: {},
+        list: {},
+        upload: {}
+      },
+      scale: {
+        change: {},
+        show: {}
+      },
+      job: {
+        create: {},
+        'delete': {},
+        list: {},
+        update: {}
+      }
+    },
+    sb: {
+      namespace: {
+        list: {},
+        show: {},
+        check: {},
+        create: {},
+        'delete': {},
+        location: {}
+      }
+    },
+    service: {
+      list: {},
+      'delete': {},
+      portal: {},
+      cert: {
+        list: {},
+        create: {},
+        'delete': {}
+      }
+    },
+    sql: {
+      server: {
+        create: {},
+        show: {},
+        list: {},
+        'delete': {}
+      },
+      firewallrule: {
+        create: {},
+        show: {},
+        list: {},
+        'delete': {}
+      },
+      db: {
+        create: {},
+        list: {},
+        show: {},
+        'delete': {}
+      }
+    },
+    vm: {
+      create: {},
+      'create-from': {},
+      list: {},
+      show: {},
+      'delete': {},
+      start: {},
+      restart: {},
+      shutdown: {},
+      capture: {},
+      'export': {},
+      location: {
+        list: {}
+      },
+      endpoint: {
+        create: {},
+        'create-multiple': {},
+        'delete': {},
+        list: {}
+      },
+      image: {
+        show: {},
+        list: {},
+        'delete': {},
+        create: {}
+      },
+      disk: {
+        show: {},
+        list: {},
+        'delete': {},
+        create: {},
+        upload: {},
+        attach: {},
+        'attach-new': {},
+        detach: {}
+      }
+    }
+  },
+  options: {
+    '-h': {}
+  }
+});
