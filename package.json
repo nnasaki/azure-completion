@@ -1,0 +1,29 @@
+{
+  "name": "azure-completion",
+  "version": "0.1.0",
+  "preferGlobal": true,
+  "author": "Yamamoto Masaki <nnasakick@gmail.com>",
+  "description": "Completion for Windows Azure CLI tool.",
+  "main" : "./bin/azure-comp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/nnasaki/azure-completion.git"
+  },
+  "bin" : {
+    "azure-comp" : ".bin/azure-comp"
+  },
+  "keywords": [
+    "cli",
+    "azure",
+    "completion",
+    "bash"
+  ],
+  "dependencies": {
+    "complete": "0.x.x"
+  },
+  "bugs" : { "web": "https://github.com/nnasaki/azure-completion/issues"}
+  "license": "MIT"
+}
