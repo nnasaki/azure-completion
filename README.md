@@ -30,6 +30,7 @@ Install
     npm install azure-completion -g
 
     comp-azure  --install >> ~/.bash_profile
+    comp-azure
     sed -i -e 's/(azure/(comp-azure/' ~/.node-completion/azure
     source ~/.node-completion/azure
 
