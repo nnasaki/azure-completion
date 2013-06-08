@@ -1,6 +1,6 @@
 {
   "name": "azure-completion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "preferGlobal": true,
   "author": "Yamamoto Masaki <nnasakick@gmail.com>",
   "description": "Completion for Windows Azure CLI tool.",
